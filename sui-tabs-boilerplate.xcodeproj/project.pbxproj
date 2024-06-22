@@ -11,6 +11,19 @@
 		73324D8B2C270A7B0083991F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324D8A2C270A7B0083991F /* ContentView.swift */; };
 		73324D8D2C270A7C0083991F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73324D8C2C270A7C0083991F /* Assets.xcassets */; };
 		73324D902C270A7C0083991F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73324D8F2C270A7C0083991F /* Preview Assets.xcassets */; };
+		73324D972C270AB10083991F /* TabsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324D962C270AB10083991F /* TabsScreen.swift */; };
+		73324DA72C270CB60083991F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324D9A2C270CB60083991F /* Router.swift */; };
+		73324DA82C270CB60083991F /* TabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324D9B2C270CB60083991F /* TabRouter.swift */; };
+		73324DA92C270CB60083991F /* Routes.protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324D9D2C270CB60083991F /* Routes.protocol.swift */; };
+		73324DAA2C270CB60083991F /* CommonRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324D9F2C270CB60083991F /* CommonRoutes.swift */; };
+		73324DAB2C270CB60083991F /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DA02C270CB60083991F /* Routes.swift */; };
+		73324DAC2C270CB60083991F /* Tabs.protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DA22C270CB60083991F /* Tabs.protocol.swift */; };
+		73324DAD2C270CB60083991F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DA42C270CB60083991F /* Tabs.swift */; };
+		73324DB02C27121A0083991F /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DAF2C27121A0083991F /* ExampleView.swift */; };
+		73324DB22C2712300083991F /* ExampleViewWithData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DB12C2712300083991F /* ExampleViewWithData.swift */; };
+		73324DB42C2712580083991F /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DB32C2712580083991F /* CommonView.swift */; };
+		73324DB62C2718CE0083991F /* NavigationHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DB52C2718CE0083991F /* NavigationHelperView.swift */; };
+		73324DB92C271AD50083991F /* DefaultRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DB82C271AD50083991F /* DefaultRouters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +32,19 @@
 		73324D8A2C270A7B0083991F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73324D8C2C270A7C0083991F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73324D8F2C270A7C0083991F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73324D962C270AB10083991F /* TabsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsScreen.swift; sourceTree = "<group>"; };
+		73324D9A2C270CB60083991F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		73324D9B2C270CB60083991F /* TabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabRouter.swift; sourceTree = "<group>"; };
+		73324D9D2C270CB60083991F /* Routes.protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.protocol.swift; sourceTree = "<group>"; };
+		73324D9F2C270CB60083991F /* CommonRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonRoutes.swift; sourceTree = "<group>"; };
+		73324DA02C270CB60083991F /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		73324DA22C270CB60083991F /* Tabs.protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabs.protocol.swift; sourceTree = "<group>"; };
+		73324DA42C270CB60083991F /* Tabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		73324DAF2C27121A0083991F /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		73324DB12C2712300083991F /* ExampleViewWithData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewWithData.swift; sourceTree = "<group>"; };
+		73324DB32C2712580083991F /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
+		73324DB52C2718CE0083991F /* NavigationHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelperView.swift; sourceTree = "<group>"; };
+		73324DB82C271AD50083991F /* DefaultRouters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +77,11 @@
 		73324D872C270A7B0083991F /* sui-tabs-boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				73324DA62C270CB60083991F /* Navigation */,
+				73324DAE2C27120B0083991F /* Views */,
 				73324D882C270A7B0083991F /* sui_tabs_boilerplateApp.swift */,
 				73324D8A2C270A7B0083991F /* ContentView.swift */,
+				73324D962C270AB10083991F /* TabsScreen.swift */,
 				73324D8C2C270A7C0083991F /* Assets.xcassets */,
 				73324D8E2C270A7C0083991F /* Preview Content */,
 			);
@@ -65,6 +94,80 @@
 				73324D8F2C270A7C0083991F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73324D9C2C270CB60083991F /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				73324D9A2C270CB60083991F /* Router.swift */,
+				73324D9B2C270CB60083991F /* TabRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		73324D9E2C270CB60083991F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				73324D9D2C270CB60083991F /* Routes.protocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		73324DA12C270CB60083991F /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				73324D9E2C270CB60083991F /* Protocols */,
+				73324D9F2C270CB60083991F /* CommonRoutes.swift */,
+				73324DA02C270CB60083991F /* Routes.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		73324DA32C270CB60083991F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				73324DA22C270CB60083991F /* Tabs.protocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		73324DA52C270CB60083991F /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				73324DA32C270CB60083991F /* Protocols */,
+				73324DA42C270CB60083991F /* Tabs.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		73324DA62C270CB60083991F /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				73324DB72C271ACA0083991F /* Helpers */,
+				73324D9C2C270CB60083991F /* Routers */,
+				73324DA12C270CB60083991F /* Routes */,
+				73324DA52C270CB60083991F /* Tabs */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		73324DAE2C27120B0083991F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73324DAF2C27121A0083991F /* ExampleView.swift */,
+				73324DB12C2712300083991F /* ExampleViewWithData.swift */,
+				73324DB32C2712580083991F /* CommonView.swift */,
+				73324DB52C2718CE0083991F /* NavigationHelperView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73324DB72C271ACA0083991F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				73324DB82C271AD50083991F /* DefaultRouters.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73324DAA2C270CB60083991F /* CommonRoutes.swift in Sources */,
 				73324D8B2C270A7B0083991F /* ContentView.swift in Sources */,
+				73324DB92C271AD50083991F /* DefaultRouters.swift in Sources */,
+				73324DB62C2718CE0083991F /* NavigationHelperView.swift in Sources */,
 				73324D892C270A7B0083991F /* sui_tabs_boilerplateApp.swift in Sources */,
+				73324DB02C27121A0083991F /* ExampleView.swift in Sources */,
+				73324DA82C270CB60083991F /* TabRouter.swift in Sources */,
+				73324DAD2C270CB60083991F /* Tabs.swift in Sources */,
+				73324DAB2C270CB60083991F /* Routes.swift in Sources */,
+				73324DA92C270CB60083991F /* Routes.protocol.swift in Sources */,
+				73324DA72C270CB60083991F /* Router.swift in Sources */,
+				73324DB22C2712300083991F /* ExampleViewWithData.swift in Sources */,
+				73324DB42C2712580083991F /* CommonView.swift in Sources */,
+				73324DAC2C270CB60083991F /* Tabs.protocol.swift in Sources */,
+				73324D972C270AB10083991F /* TabsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
