@@ -31,8 +31,16 @@ protocol TabRouterProtocol {
 
     func createTabViewBinding() -> Binding<Tab> {
         Binding<Tab>(
-            get: { self.activeTab },
-            set: navigate
+            get: { [unowned self] in
+                self.activeTab
+            },
+            set: { @Sendable newValue in
+                // Ensure we execute on the main actor, since TabRouter is @MainActor.
+                Task { @MainActor in
+                    self.navigate(to: newValue)
+                }
+            }
         )
     }
 }
+

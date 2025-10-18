@@ -11,55 +11,29 @@ struct TabsScreen: View {
     var tabRouter: TabRouter
 
     var body: some View {
-        ZStack(alignment: .bottom) {
-            TabView(selection: tabRouter.createTabViewBinding()) {
-                ForEach(Tab.allCases) { tab in
-                    if tab.isEnabled {
-                        NavigationStack(path: tab.router.createRouterPathBinding()) {
-                            tab.view
-                                .environment(tab.router)
-                                .navigationDestination(for: Routes.self, destination: tab.router.navigationHandler)
-                                .navigationTitle(tab.rawValue.capitalized)
-                        }
-                        .tag(tab)
-                    }
-                }
-            }
-
-            createTabBar()
-        }
-        .ignoresSafeArea(.keyboard)
-    }
-}
-
-extension TabsScreen {
-    @MainActor
-    @ViewBuilder private func createTabBar() -> some View {
-        HStack(spacing: 0) {
+        TabView(selection: tabRouter.createTabViewBinding()) {
             ForEach(Tab.allCases) { tab in
                 if tab.isEnabled {
-                    VStack(spacing: 4) {
-                        Image(systemName: tab.icon)
-                            .font(.system(size: 24))
-                            .symbolVariant(.fill)
-                            .symbolEffect(.bounce.down.byLayer, options: .speed(2), value: tabRouter.animateSymbol[tab])
-
-                        Text(tab.rawValue)
-                            .font(.caption)
-                            .textScale(.secondary)
+                    NavigationStack(path: tab.router.createRouterPathBinding()) {
+                        tab.view
+                            .environment(tab.router)
+                            .navigationDestination(for: Routes.self, destination: tab.router.navigationHandler)
+                            .navigationTitle(tab.rawValue.capitalized)
+                            .navigationBarTitleDisplayMode(.large)
+                            .toolbarBackground(.automatic, for: .navigationBar)
+                            .toolbarBackgroundVisibility(.automatic, for: .navigationBar)
                     }
-                    .frame(maxWidth: .infinity)
-                    .foregroundStyle(tabRouter.activeTab == tab ? .blue : .gray)
-                    .padding(.top, 10)
-                    .padding(.bottom, 0)
-                    .contentShape(.rect)
-                    .onTapGesture {
-                        tabRouter.navigate(to: tab)
+                    .tag(tab)
+                    .tabItem {
+                        // System Dock uses the tabItem’s label and icon
+                        Image(systemName: tab.icon)
+                        Text(tab.rawValue)
                     }
                 }
             }
         }
-        .background(.ultraThinMaterial)
+        // Keep keyboard safe-area behavior if you like
+        .ignoresSafeArea(.keyboard)
     }
 }
 

@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+@MainActor
 protocol RoutesProtocol: Hashable, Equatable {
     associatedtype V: View
     @ViewBuilder func view() -> V
 }
+

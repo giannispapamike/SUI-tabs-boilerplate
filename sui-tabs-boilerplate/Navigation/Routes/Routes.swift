@@ -12,8 +12,8 @@ enum Routes: RoutesProtocol {
     case exampleViewWithData(text: String)
     case common(Routes.Common)
 
-    @MainActor 
-    @ViewBuilder func view() -> some View {
+    @ViewBuilder
+    func view() -> some View {
         switch self {
             case .exampleView:
                 ExampleView()

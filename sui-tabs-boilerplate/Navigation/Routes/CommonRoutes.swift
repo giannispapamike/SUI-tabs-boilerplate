@@ -11,8 +11,8 @@ extension Routes {
     enum Common: RoutesProtocol {
         case exampleCommonView
 
-        @MainActor 
-        @ViewBuilder func view() -> some View {
+        @ViewBuilder
+        func view() -> some View {
             switch self {
                 case .exampleCommonView:
                     CommonView()

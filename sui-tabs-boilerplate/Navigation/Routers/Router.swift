@@ -38,19 +38,11 @@ final class Router: RouterProtocol {
     }
 
     func back() {
-        assert(
-            self.path.count > 0,
-            "[ROUTER]:[BACK]:[ASSERT]: View stack does not include sufficient views for this action"
-        )
         guard self.path.count > 0 else { return }
         self.path.removeLast()
     }
 
     func back(by step: Int) {
-        assert(
-            self.path.count > 0,
-            "[ROUTER]:[BACK]:[ASSERT]: View stack does not include sufficient views for this action"
-        )
         guard path.count >= step else { return }
         self.path.removeLast(step)
     }
