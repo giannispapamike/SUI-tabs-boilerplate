@@ -24,6 +24,7 @@
 		73324DB42C2712580083991F /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DB32C2712580083991F /* CommonView.swift */; };
 		73324DB62C2718CE0083991F /* NavigationHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DB52C2718CE0083991F /* NavigationHelperView.swift */; };
 		73324DB92C271AD50083991F /* DefaultRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73324DB82C271AD50083991F /* DefaultRouters.swift */; };
+		C6A3CC1F2EA79A87000208C4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C6A3CC1E2EA79A87000208C4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		73324DB32C2712580083991F /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		73324DB52C2718CE0083991F /* NavigationHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelperView.swift; sourceTree = "<group>"; };
 		73324DB82C271AD50083991F /* DefaultRouters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouters.swift; sourceTree = "<group>"; };
+		C6A3CC1E2EA79A87000208C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				73324D9A2C270CB60083991F /* Router.swift */,
 				73324D9B2C270CB60083991F /* TabRouter.swift */,
+				C6A3CC1E2EA79A87000208C4 /* README.md */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A3CC1F2EA79A87000208C4 /* README.md in Resources */,
 				73324D902C270A7C0083991F /* Preview Assets.xcassets in Resources */,
 				73324D8D2C270A7C0083991F /* Assets.xcassets in Resources */,
 			);
