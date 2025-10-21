@@ -87,3 +87,11 @@ By default, this project provides a simple DefaultRouters container with shared 
 Recommended (iOS 18+):
 - Inject @Observable models with .environment(model) at the app root.
 - Access with @Environment(ModelType.self) in views.
+
+## Examples
+
+<p align="center">
+  <img src="screenshots/screenshot.png" width="33%" height="500" alt="Main screen">
+  <img src="screenshots/screenshot-1.png" width="33%" height="500" alt="Secondary screen">
+  <img src="screenshots/screenshot-2.png" width="33%" height="500" alt="Additional view">
+</p>
